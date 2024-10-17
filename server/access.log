@@ -1,0 +1,4 @@
+GET / 404 139 - 2.631 ms
+GET /api/v1/user 404 150 - 0.970 ms
+GET /api/v1/user/all 200 2620 - 33.920 ms
+GET /favicon.ico 404 150 - 1.810 ms

@@ -1,0 +1,88 @@
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  padding-top: 0.7rem;
+
+  text-align: center;
+  
+}
+body{
+  /* overflow: hidden ; */
+}
+.h-200{
+  height: 200px !important;
+}
+*{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none; 
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.657);
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+input[type="radio"] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: transparent;
+	position: relative;
+  border: 1px solid black;
+  padding: 1px;
+	top: 6px;
+}
+
+input[type="radio"]:checked::before {
+	content: "";
+	display: block;
+	width: 80%;
+	height: 80%;
+	background-color: #379777;
+	border-radius: 60%;
+	position: absolute;
+	top: 51%;
+	left: 48%;
+
+	transform: translate(-50%, -50%);
+	animation: appear 0.8s;
+}
